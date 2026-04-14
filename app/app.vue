@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <!-- <NuxtLayout name="secondary"> Pour utiliser un layout précis -->
+  <NuxtLayout>
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">

@@ -1,5 +1,7 @@
 <template>
     <h1>Contact</h1>
+    <!-- Possibilité de changer des layouts de manière réactive avec cette méthode auto importée-->
+    <button @click="setPageLayout('default')">Change layout</button>
 </template>
 
 
@@ -15,5 +17,10 @@ setTimeout(() => {
 
 useHead({
   titleTemplate: title,
+})
+
+// Pour choisir un layout particulier pour cette page
+definePageMeta({
+  layout: 'secondary',
 })
 </script>
